@@ -38,7 +38,7 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - **RNF*****06:*** As informações cadastradas deverão permanecer salvas após atualizar a página.
 - **RNF*****07:*** O código deverá ser organizado para facilitar correções e melhorias futuras.
 
-# Elaboração do Planejamento Inicial
+# Elaboração do Planejamento Inicial:
 
 ## Sprints
 
