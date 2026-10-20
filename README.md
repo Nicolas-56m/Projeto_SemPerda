@@ -1,6 +1,6 @@
 # Projeto_SemPerda
 
-## Metodologias utilizadas: Kanban e XP
+## Metodologias Utilizadas: Kanban e XP
 - O projeto utilizará as metodologias ágeis Kanban e XP (Extreme Programming) para organizar e melhorar o desenvolvimento do software. O Kanban será utilizado para visualizar e acompanhar as tarefas, enquanto o XP ajudará a garantir a qualidade do sistema por meio de testes frequentes, colaboração entre os desenvolvedores e melhoria contínua. Juntas, essas metodologias contribuirão para um desenvolvimento mais organizado, eficiente e com menos erros.
 
 ## Explicando o Projeto SemPerdas
@@ -9,7 +9,7 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 
 - O sistema permite cadastrar produtos com nome, quantidade, preço e data de validade. Ele identifica produtos próximos do vencimento ou já vencidos e envia alertas automáticos para que o comerciante possa tomar providências.
 
-## Nossa equipe
+## Nossa Equipe
 - ***01*** - **Cauã** >>> Gerenciamento do Projeto  
 - ***02*** - **Vivian** >>> Front-End
 - ***03*** - **Maria** >>> Front-End
@@ -37,5 +37,38 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - **RNF*****05:*** O acesso aos dados deverá ser protegido por regras de segurança.
 - **RNF*****06:*** As informações cadastradas deverão permanecer salvas após atualizar a página.
 - **RNF*****07:*** O código deverá ser organizado para facilitar correções e melhorias futuras.
+
+# Elaboração do Planejamento Inicial
+
+## Sprints
+
+### 01 - Planejamento e estrutura do site
+- Definir os requisitos e as funcionalidades principais.
+- Criar o quadro Kanban com as tarefas da equipe.
+- Desenvolver a estrutura das páginas em HTML.
+- Iniciar a estilização com CSS.
+- **Entrega:** estrutura inicial do SemPerdas e banco de dados preparado.
+
+### 02 - Cadastro e armazenamento dos produtos
+- Criar os formulários de cadastro.
+- Implementar o cadastro, a edição e a exclusão de produtos.
+- Verificar se os dados são armazenados corretamente.
+- **Entrega:** cadastro de produtos funcionando e dados salvos online.
+
+### 03 - Controle de validade, alertas e relatórios
+- Programar o cálculo dos dias restantes para o vencimento.
+- Implementar alertas visuais para produtos próximos do vencimento ou vencidos.
+- Desenvolver gráficos e indicadores de produtos em risco.
+- Realizar testes das funcionalidades desenvolvidas. **Entrega:** controle de validade, alertas no painel e relatórios iniciais.
+
+### 04 - Integração, correções e apresentação
+- Integrar todas as funcionalidades.
+- Corrigir erros identificados nos testes.
+- Verificar a adaptação do site para computadores e celulares.
+- Finalizar a documentação e preparar a demonstração.
+- **Entrega:** versão funcional do SemPerdas, pronta para apresentação.
+
+## Entregas e revisões do software
+As entregas do SemPerda serão feitas gradualmente, conforme as funcionalidades forem desenvolvidas. A equipe realizará revisões semanais, testes frequentes e correções de erros, utilizando o Kanban para acompanhar as tarefas e o XP para garantir a qualidade do código. Ao final, será feita uma avaliação geral do sistema antes da apresentação.
 
 ## Abaixar o express (npm install express) pra ter o (node_modules) e o (package-lock.json) no VScode!
