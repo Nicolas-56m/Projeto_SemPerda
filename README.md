@@ -49,17 +49,23 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - Iniciar a estilização com CSS.
 - **Entrega:** estrutura inicial do SemPerdas e banco de dados preparado.
 
+___
+
 ### 02 - Cadastro e armazenamento dos produtos
 - Criar os formulários de cadastro.
 - Implementar o cadastro, a edição e a exclusão de produtos.
 - Verificar se os dados são armazenados corretamente.
 - **Entrega:** cadastro de produtos funcionando e dados salvos online.
 
+___
+
 ### 03 - Controle de validade, alertas e relatórios
 - Programar o cálculo dos dias restantes para o vencimento.
 - Implementar alertas visuais para produtos próximos do vencimento ou vencidos.
 - Desenvolver gráficos e indicadores de produtos em risco.
 - Realizar testes das funcionalidades desenvolvidas. **Entrega:** controle de validade, alertas no painel e relatórios iniciais.
+
+___
 
 ### 04 - Integração, correções e apresentação
 - Integrar todas as funcionalidades.
@@ -68,7 +74,9 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - Finalizar a documentação e preparar a demonstração.
 - **Entrega:** versão funcional do SemPerdas, pronta para apresentação.
 
+___
+
 ## Entregas e revisões do software
-As entregas do SemPerda serão feitas gradualmente, conforme as funcionalidades forem desenvolvidas. A equipe realizará revisões semanais, testes frequentes e correções de erros, utilizando o Kanban para acompanhar as tarefas e o XP para garantir a qualidade do código. Ao final, será feita uma avaliação geral do sistema antes da apresentação.
+- As entregas do SemPerda serão feitas gradualmente, conforme as funcionalidades forem desenvolvidas. A equipe realizará revisões semanais, testes frequentes e correções de erros, utilizando o Kanban para acompanhar as tarefas e o XP para garantir a qualidade do código. Ao final, será feita uma avaliação geral do sistema antes da apresentação.
 
 ## Abaixar o express (npm install express) pra ter o (node_modules) e o (package-lock.json) no VScode!
