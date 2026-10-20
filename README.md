@@ -7,6 +7,6 @@
 - O SemPerdas é um site desenvolvido para ajudar pequenos mercados, padarias, mercearias e restaurantes a controlar seus estoques, reduzir o desperdício de alimentos e evitar prejuízos financeiros causados pelo vencimento dos produtos.
 Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes acompanhem seus produtos e tomem decisões para evitar perdas.
 
-  O sistema permite cadastrar produtos com nome, quantidade, preço e data de validade. Ele identifica produtos próximos do vencimento ou já vencidos e envia alertas automáticos para que o comerciante possa tomar providências.
+- O sistema permite cadastrar produtos com nome, quantidade, preço e data de validade. Ele identifica produtos próximos do vencimento ou já vencidos e envia alertas automáticos para que o comerciante possa tomar providências.
 
 ## Abaixar o express (npm install express) pra ter o (node_modules) e o (package-lock.json) no VScode!
