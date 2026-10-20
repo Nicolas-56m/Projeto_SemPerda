@@ -21,13 +21,13 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 ## Requisitos Funcionais
 
 - **RF*****01:*** Permitir o cadastro de produtos com nome, quantidade, preço e data de validade.
-- **RF02:** Permitir editar as informações dos produtos cadastrados.
-- **RF03:** Permitir excluir produtos do estoque.
-- **RF04:** Armazenar os dados dos produtos em um banco de dados online.
-- **RF05:** Calcular quantos dias faltam para o vencimento de cada produto.
-- **RF06:** Exibir alertas para produtos próximos do vencimento ou já vencidos.
-- **RF07:** Apresentar uma lista dos produtos cadastrados e suas situações.
-- **RF08:** Exibir relatórios e gráficos sobre produtos próximos do vencimento e perdas registradas.
-- **RF09:** Calcular o valor estimado dos produtos em risco.
+- **RF*****02:*** Permitir editar as informações dos produtos cadastrados.
+- **RF*****03:*** Permitir excluir produtos do estoque.
+- **RF*****04:*** Armazenar os dados dos produtos em um banco de dados online.
+- **RF*****05:*** Calcular quantos dias faltam para o vencimento de cada produto.
+- **RF*****06:*** Exibir alertas para produtos próximos do vencimento ou já vencidos.
+- **RF*****07:*** Apresentar uma lista dos produtos cadastrados e suas situações.
+- **RF*****08:*** Exibir relatórios e gráficos sobre produtos próximos do vencimento e perdas registradas.
+- **RF*****09:*** Calcular o valor estimado dos produtos em risco.
 
 ## Abaixar o express (npm install express) pra ter o (node_modules) e o (package-lock.json) no VScode!
