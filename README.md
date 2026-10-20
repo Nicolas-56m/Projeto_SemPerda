@@ -19,7 +19,6 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - ***07*** - **Mayara** >>> Documentação
 
 ## Requisitos Funcionais
-
 - **RF*****01:*** Permitir o cadastro de produtos com nome, quantidade, preço e data de validade.
 - **RF*****02:*** Permitir editar as informações dos produtos cadastrados.
 - **RF*****03:*** Permitir excluir produtos do estoque.
@@ -29,5 +28,14 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - **RF*****07:*** Apresentar uma lista dos produtos cadastrados e suas situações.
 - **RF*****08:*** Exibir relatórios e gráficos sobre produtos próximos do vencimento e perdas registradas.
 - **RF*****09:*** Calcular o valor estimado dos produtos em risco.
+
+## Requisitos Não Funcionais
+- **RNF*****01:*** O site deverá ter uma interface simples e fácil de utilizar.
+- **RNF*****02:*** O sistema deverá funcionar em computadores e celulares.
+- **RNF*****03:*** Os dados deverão ser armazenados online utilizando o Supabase.
+- **RNF*****04:*** O sistema deverá validar os campos obrigatórios e impedir dados inválidos.
+- **RNF*****05:*** O acesso aos dados deverá ser protegido por regras de segurança.
+- **RNF*****06:*** As informações cadastradas deverão permanecer salvas após atualizar a página.
+- **RNF*****07:*** O código deverá ser organizado para facilitar correções e melhorias futuras.
 
 ## Abaixar o express (npm install express) pra ter o (node_modules) e o (package-lock.json) no VScode!
