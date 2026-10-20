@@ -10,13 +10,13 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - O sistema permite cadastrar produtos com nome, quantidade, preço e data de validade. Ele identifica produtos próximos do vencimento ou já vencidos e envia alertas automáticos para que o comerciante possa tomar providências.
 
 ## Nossa equipe
-- **01** - Cauã >>> Gerenciamento do Projeto  
-- **02** - Vivian >>> Front-End
-- **03** - Maria >>> Front-End
-- **04** - Nicolas >>> Back-End
-- **05** - Rafaela >>> Back-End
-- **06** - Keilon >>> Notificações e testes
-- **07** - Mayara >>> Documentação
+- ***01*** - Cauã** >>> Gerenciamento do Projeto  
+- ***02*** - Vivian** >>> Front-End
+- ***03*** - Maria** >>> Front-End
+- ***04*** - Nicolas** >>> Back-End
+- ***05*** - Rafaela** >>> Back-End
+- ***06*** - Keilon** >>> Notificações e testes
+- ***07*** - Mayara** >>> Documentação
 
 ## Requisitos Funcionais
 
