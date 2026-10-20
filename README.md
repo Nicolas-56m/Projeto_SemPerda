@@ -83,4 +83,8 @@ ___
 ## Entregas e revisões do software
 - As entregas do SemPerda serão feitas gradualmente, conforme as funcionalidades forem desenvolvidas. A equipe realizará revisões semanais, testes frequentes e correções de erros, utilizando o Kanban para acompanhar as tarefas e o XP para garantir a qualidade do código. Ao final, será feita uma avaliação geral do sistema antes da apresentação.
 
-## Abaixar o express (npm install express) pra ter o (node_modules) e o (package-lock.json) no VScode!
+___
+
+## A partir daqui estamos atualizando!
+
+### *Aviso:* Abaixar o express (npm install express) pra ter o (node_modules) e o (package-lock.json) no VScode!
