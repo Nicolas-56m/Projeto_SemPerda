@@ -20,7 +20,7 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 
 ## Requisitos Funcionais
 
-- **RF01:** Permitir o cadastro de produtos com nome, quantidade, preço e data de validade.
+- **RF*****01:*** Permitir o cadastro de produtos com nome, quantidade, preço e data de validade.
 - **RF02:** Permitir editar as informações dos produtos cadastrados.
 - **RF03:** Permitir excluir produtos do estoque.
 - **RF04:** Armazenar os dados dos produtos em um banco de dados online.
