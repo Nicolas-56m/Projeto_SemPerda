@@ -19,7 +19,7 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - ***07*** - **Mayara** >>> Documentação
 
 ## Requisitos Funcionais
-- **RF*****01:*** Permitir o cadastro de produtos com nome, quantidade, preço e data de validade.
+- **RF*****01***: Permitir o cadastro de produtos com nome, quantidade, preço e data de validade.
 - **RF*****02:*** Permitir editar as informações dos produtos cadastrados.
 - **RF*****03:*** Permitir excluir produtos do estoque.
 - **RF*****04:*** Armazenar os dados dos produtos em um banco de dados online.
