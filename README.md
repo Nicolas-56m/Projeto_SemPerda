@@ -47,6 +47,7 @@ Seu objetivo é facilitar a gestão do estoque, permitindo que os comerciantes a
 - Criar o quadro Kanban com as tarefas da equipe.
 - Desenvolver a estrutura das páginas em HTML.
 - Iniciar a estilização com CSS.
+
 - **Entrega:** estrutura inicial do SemPerdas e banco de dados preparado.
 
 ___
@@ -55,6 +56,7 @@ ___
 - Criar os formulários de cadastro.
 - Implementar o cadastro, a edição e a exclusão de produtos.
 - Verificar se os dados são armazenados corretamente.
+
 - **Entrega:** cadastro de produtos funcionando e dados salvos online.
 
 ___
@@ -63,7 +65,9 @@ ___
 - Programar o cálculo dos dias restantes para o vencimento.
 - Implementar alertas visuais para produtos próximos do vencimento ou vencidos.
 - Desenvolver gráficos e indicadores de produtos em risco.
-- Realizar testes das funcionalidades desenvolvidas. **Entrega:** controle de validade, alertas no painel e relatórios iniciais.
+- Realizar testes das funcionalidades desenvolvidas.
+
+- **Entrega:** controle de validade, alertas no painel e relatórios iniciais.
 
 ___
 
