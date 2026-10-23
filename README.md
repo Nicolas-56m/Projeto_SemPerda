@@ -1,5 +1,3 @@
-## REDME está sendo atualizado!
-
 # Projeto SemPerdas (Documentação do projeto via README.md, também está na pasta)
 **Integrantes:** Rafaela, Mayara, Vivian, Cauã, Nicolas e Keilon
 
