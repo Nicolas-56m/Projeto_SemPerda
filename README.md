@@ -1,5 +1,5 @@
 # Projeto SemPerdas (Documentação do projeto via README.md, também está na pasta)
-**Integrantes:** Rafaela, Mayara, Vivian, Cauã, Nicolas e Keilon
+**Integrantes:** Cauã, Vivian, Maria, Nicolas, Rafaela, Keilon e Mayara
 
 ## 1. Introdução
 O SemPerdas é um projeto de criação de um site para ajudar pequenos negócios, como mercados, padarias e restaurantes, a controlar seus estoques.
@@ -24,7 +24,7 @@ O projeto também busca incentivar o aproveitamento de produtos que ainda podem 
 
 Assim, o SemPerdas pretende contribuir para a redução do desperdício e ajudar os estabelecimentos a cuidar melhor de seus estoques.
 
-## 4. Objeto Geral
+## 4. Objetivo Geral
 Desenvolver um site de controle de estoque que ajude pequenos negócios a organizar seus produtos, acompanhar as datas de validade e reduzir as perdas causadas pelo vencimento de mercadorias.
 
 ## 5. Proposta de Solução
@@ -38,7 +38,7 @@ Outra ideia é criar selos de reconhecimento para os estabelecimentos que utiliz
   
 Essas funções serão planejadas e avaliadas durante o desenvolvimento do projeto.
 
-## 6. Metodogia
+## 6. Metodologia
 A metodologia é a forma como o grupo pretende organizar e realizar o trabalho durante o desenvolvimento do sistema.
 
 No SemPerdas, serão utilizadas como referência duas metodologias ágeis:
@@ -90,7 +90,7 @@ ___
 Os requisitos não funcionais descrevem características que o sistema deverá apresentar.
 
 - **RNF*****01:*** O site deverá ter uma interface simples e fácil de utilizar.
-- **RNF*****02:*** O sistema deverá funcionar em computadores e celulares.
+- <strong>RNF<em>02</em>:</strong> O sistema deverá funcionar em computadores e celulares.
 - **RNF*****03:*** Os dados deverão ser armazenados online utilizando o Supabase.
 - **RNF*****04:*** O sistema deverá validar os campos obrigatórios e impedir dados inválidos.
 - **RNF*****05:*** O acesso aos dados deverá ser protegido por regras de segurança.
@@ -110,7 +110,7 @@ os usuários.
 - **Keilon - Notificações e testes:** Trabalhará nos avisos do sistema e na verificação de seu funcionamento.
 - **Mayara - Documentação:** Ficará responsável por organizar e registrar as informações do projeto.
 
-## 10. Entregas, Revisões e Cronograma
+## 9. Entregas, Revisões e Cronograma
 
 O desenvolvimento do SemPerdas será dividido em etapas. A equipe pretende
 realizar entregas gradualmente, conforme as funcionalidades forem sendo criadas.
