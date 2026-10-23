@@ -73,15 +73,15 @@ ___
 
 Os requisitos funcionais descrevem as funções que o sistema deverá realizar.
 
-- **RF*****01:*** Permitir o cadastro de produtos com nome, quantidade, preço e data de validade.
-- **RF*****02:*** Permitir editar as informações dos produtos cadastrados.
-- **RF*****03:*** Permitir excluir produtos do estoque.
-- **RF*****04:*** Armazenar os dados dos produtos em um banco de dados online.
-- **RF*****05:*** Calcular quantos dias faltam para o vencimento de cada produto.
-- **RF*****06:*** Exibir alertas para produtos próximos do vencimento ou já vencidos.
-- **RF*****07:*** Apresentar uma lista dos produtos cadastrados e suas situações.
-- **RF*****08:*** Exibir relatórios e gráficos sobre produtos próximos do vencimento e perdas registradas.
-- **RF*****09:*** Calcular o valor estimado dos produtos em risco.
+- <strong>RF<em>01</em></strong>: Permitir o cadastro de produtos com nome, quantidade, preço e data de validade.
+- <strong>RF<em>02</em></strong>: Permitir editar as informações dos produtos cadastrados.
+- <strong>RF<em>03</em></strong>: Permitir excluir produtos do estoque.
+- <strong>RF<em>04</em></strong>: Armazenar os dados dos produtos em um banco de dados online.
+- <strong>RF<em>05</em></strong>: Calcular quantos dias faltam para o vencimento de cada produto.
+- <strong>RF<em>06</em></strong>: Exibir alertas para produtos próximos do vencimento ou já vencidos.
+- <strong>RF<em>07</em></strong>: Apresentar uma lista dos produtos cadastrados e suas situações.
+- <strong>RF<em>08</em></strong>: Exibir relatórios e gráficos sobre produtos próximos do vencimento e perdas registradas.
+- <strong>RF<em>09</em></strong>: Calcular o valor estimado dos produtos em risco.
 
 ### 7.2. Requisitos Não Funcionais
 
@@ -89,13 +89,13 @@ ___
 
 Os requisitos não funcionais descrevem características que o sistema deverá apresentar.
 
-- **RNF*****01:*** O site deverá ter uma interface simples e fácil de utilizar.
-- <strong>RNF<em>02</em>:</strong> O sistema deverá funcionar em computadores e celulares.
-- **RNF*****03:*** Os dados deverão ser armazenados online utilizando o Supabase.
-- **RNF*****04:*** O sistema deverá validar os campos obrigatórios e impedir dados inválidos.
-- **RNF*****05:*** O acesso aos dados deverá ser protegido por regras de segurança.
-- **RNF*****06:*** As informações cadastradas deverão permanecer salvas após atualizar a página.
-- **RNF*****07:*** O código deverá ser organizado para facilitar correções e melhorias futuras.
+- <strong>RNF<em>01</em></strong>: O site deverá ter uma interface simples e fácil de utilizar.
+- <strong>RNF<em>02</em></strong>: O sistema deverá funcionar em computadores e celulares.
+- <strong>RNF<em>03</em></strong>: Os dados deverão ser armazenados online utilizando o Supabase.
+- <strong>RNF<em>04</em></strong>: O sistema deverá validar os campos obrigatórios e impedir dados inválidos.
+- <strong>RNF<em>05</em></strong>: O acesso aos dados deverá ser protegido por regras de segurança.
+- <strong>RNF<em>06</em></strong>: As informações cadastradas deverão permanecer salvas após atualizar a página.
+- <strong>RNF<em>07</em></strong>: O código deverá ser organizado para facilitar correções e melhorias futuras.
 ___
 
 ## 8. Organização da Equipe
