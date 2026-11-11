@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SemPerdas</title>
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body class="login-page">
+    <main class="login-container">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="SemPerdas">
+        </div>
+
+        <h1>Tela de Login</h1>
+        <p class="subtitulo">Entre com seu e-mail e senha para acessar o sistema.</p>
+
+        <form id="formLogin" method="post">
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <p id="mensagemErro" class="mensagem-erro" role="alert"></p>
+
+            <button type="submit" class="botao-principal">Entrar no Sistema</button>
+        </form>
+
+        <p class="rodape">
+            <a href="./erro.html">Esqueci minha senha</a>
+        </p>
+
+        <p class="rodape">
+            <a href="./cadastro.html">Ainda não tenho conta</a>
+        </p>
+
+        <p class="rodape">SemPerdas · Sistema de Cadastro de Produtos</p>
+    </main>
+
+    <script>
+        const formulario = document.getElementById("formLogin");
+
+        formulario.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+
+            const email = document.getElementById("email").value.trim().toLowerCase();
+            const senha = document.getElementById("senha").value;
+            const mensagemErro = document.getElementById("mensagemErro");
+
+            let loginValido = email === "adminsemperdas@gmail.com" && senha === "157SemPerdas";
+
+            if (!loginValido) {
+                const contas = JSON.parse(localStorage.getItem("semperdasContas") || "[]");
+
+                for (let i = 0; i < contas.length; i++) {
+                    const conta = contas[i];
+
+                    if (conta.email === email && conta.senha === senha) {
+                        loginValido = true;
+                        break;
+                    }
+                }
+            }
+
+            if (loginValido) {
+                window.location.href = "./index.html";
+            } else {
+                mensagemErro.textContent = "E-mail ou senha incorretos.";
+            }
+        });
+    </script>
+</body>
+</html>

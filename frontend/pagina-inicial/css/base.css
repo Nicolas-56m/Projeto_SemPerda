@@ -1,0 +1,182 @@
+:root {
+    --verde-escuro: #174731;
+    --verde-botao: #216346;
+    --verde-claro: #eaf5ee;
+    --texto: #20382c;
+    --texto-suave: #50665a;
+    --borda: #c5d8cc;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    color: var(--texto);
+}
+
+/* Cabeçalho e tabela da página inicial */
+header {
+    width: 100%;
+    min-height: 80px;
+    background-color: var(--verde-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 24px;
+}
+
+header img {
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header a {
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-x: auto;
+}
+
+.container > table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.container th,
+.container td {
+    padding: 12px;
+    border-bottom: 1px solid var(--borda);
+}
+
+.container th {
+    background-color: var(--verde-claro);
+}
+
+/* Visual comum do login, cadastro e recuperação */
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px 16px;
+    background: linear-gradient(135deg, var(--verde-claro), #f8fbf9);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: clamp(24px, 6vw, 36px);
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(23, 71, 49, 0.12);
+    text-align: center;
+}
+
+.login-container .logo img {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+.login-container h1 {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.login-container .subtitulo {
+    color: var(--texto-suave);
+    margin-bottom: 24px;
+}
+
+.login-container form {
+    display: grid;
+    gap: 16px;
+    text-align: left;
+}
+
+.login-container .campo {
+    display: grid;
+    gap: 6px;
+}
+
+.login-container label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background-color: var(--branco);
+    color: var(--texto);
+    font: inherit;
+}
+
+.login-container input:focus,
+.login-container button:focus-visible {
+    outline: 2px solid var(--verde-botao);
+    outline-offset: 2px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--verde-botao);
+    color: var(--branco);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: var(--verde-escuro);
+}
+
+.login-container .mensagem-erro {
+    color: #a12424;
+    font-size: 14px;
+}
+
+.login-container .mensagem-erro:empty {
+    display: none;
+}
+
+.login-container .rodape {
+    margin-top: 24px;
+    color: var(--texto-suave);
+    font-size: 12px;
+}

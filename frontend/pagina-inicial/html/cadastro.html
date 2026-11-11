@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionário | SemPerdas</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body class="login-page">
+    <main class="login-container">
+        <div class="logo">
+           <img src="./assets/logo" alt="SemPerdas">
+        </div>
+
+        <h1>Bem vindo!</h1>
+        <p class="subtitulo">Preencha os dados do funcionário.</p>
+
+        <form id="formCadastro" method="post">
+            <div class="campo">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="cargo">Cargo</label>
+                <input type="text" id="cargo" name="cargo" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" autocomplete="new-password" minlength="6" required>
+            </div>
+
+            <button type="submit">Cadastrar funcionário</button>
+
+            <p id="mensagemCadastro" role="status"></p>
+        </form>
+
+        <p class="rodape">
+            <a href="./login.html">Já tenho conta</a>
+        </p>
+    </main>
+
+    <script>
+        const formulario = document.getElementById("formCadastro");
+        const mensagem = document.getElementById("mensagemCadastro");
+
+        formulario.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById("nome").value.trim();
+            const email = document.getElementById("email").value.trim().toLowerCase();
+            const cargo = document.getElementById("cargo").value.trim();
+            const senha = document.getElementById("senha").value;
+
+            if (!nome || !cargo) {
+                mensagem.textContent = "Preencha o nome e o cargo.";
+                return;
+            }
+
+            const contas = JSON.parse(localStorage.getItem("semperdasContas") || "[]");
+            const emailJaCadastrado = contas.some(function (conta) {
+                return conta.email === email;
+            });
+
+            if (email === "adminsemperdas@gmail.com" || emailJaCadastrado) {
+                mensagem.textContent = "Este e-mail já tem conta. Clique em “Já tenho conta”.";
+                return;
+            }
+
+            contas.push({ nome, email, cargo, senha });
+            localStorage.setItem("semperdasContas", JSON.stringify(contas));
+
+            window.location.href = "./login.html";
+        });
+    </script>
+</body>
+</html>
