@@ -1,5 +1,5 @@
 # Projeto SemPerdas (Documentação do projeto via README.md, também está na pasta)
-**Integrantes:** Cauã, Vivian, Maria, Nicolas, Rafaela, Keilon e Mayara
+**Integrantes:** Cauã, Vivian, Maria, Nicolas, Rafaela, Keilon e Mayara.
 
 ## 1. Introdução
 O SemPerdas é um projeto de criação de um site para ajudar pequenos negócios, como mercados, padarias e restaurantes, a controlar seus estoques.
