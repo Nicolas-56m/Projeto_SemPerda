@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar senha | SemPerdas</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/erro.css">
+</head>
+<body class="login-page">
+    <main class="login-container">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="SemPerdas">
+        </div>
+
+        <h1>Recuperar senha</h1>
+        <p class="subtitulo">Informe o e-mail cadastrado no SemPerdas.</p>
+
+        <form id="formRecuperacao" method="post">
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <button type="submit" class="botao-principal">Enviar link de recuperação</button>
+
+            <p id="mensagemRecuperacao" role="status"></p>
+        </form>
+
+        <p class="rodape">
+            <a href="./login.html">Voltar para o login</a>
+        </p>
+    </main>
+
+    <script>
+        const formulario = document.getElementById("formRecuperacao");
+
+        formulario.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+
+            const mensagem = document.getElementById("mensagemRecuperacao");
+            mensagem.textContent = "O envio por e-mail será ativado quando a tela for conectada ao servidor.";
+        });
+    </script>
+</body>
+</html>
