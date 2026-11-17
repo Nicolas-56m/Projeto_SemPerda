@@ -1,0 +1,13 @@
+#mensagemRecuperacao {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+#mensagemRecuperacao:empty {
+    display: none;
+}
+
+#formRecuperacao + .rodape a {
+    color: var(--verde-botao);
+    font-weight: bold;
+}

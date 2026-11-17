@@ -1,0 +1,8 @@
+#mensagemCadastro {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+#mensagemCadastro:empty {
+    display: none;
+}
