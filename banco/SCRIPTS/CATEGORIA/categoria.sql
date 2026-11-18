@@ -1,15 +1,15 @@
--- CREATE
+-- CREATE --
 INSERT INTO categoria (nome, descricao) 
 VALUES ('Laticínios', 'Leite, queijos, iogurtes e derivados refrigerados');
 
--- READ
+-- READ --
 SELECT * FROM categoria WHERE id_categoria = 1;
 
--- UPDATE
+-- UPDATE --
 UPDATE categoria 
 SET descricao = 'Produtos lácteos perecíveis e derivados' 
 WHERE id_categoria = 1;
 
--- DELETE 
+-- DELETE --
 DELETE FROM categoria WHERE id_categoria = 1;
 
