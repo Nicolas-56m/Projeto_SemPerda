@@ -1,2 +1,3 @@
-INSERT INTO usuario (nome_usuario, email, senha, telefone) VALUES
-('Mayara', 'Mayara@gmail.com','Campinas','SP','2026-10-28');
+INSERT INTO usuario (nome, email, senha, telefone) 
+VALUES ('Nicolas', 'nicolas@email.com', 'hash_senha_123', '(19) 99999-1111');
+
