@@ -1,12 +1,11 @@
-CREATE DATABASE semperda;
-
+CREATE DATABASE IF NOT EXISTS semperda;
 USE semperda;
 
 -- TABELA USUARIO
 CREATE TABLE usuario (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL,
     telefone VARCHAR(20)
 );
@@ -43,53 +42,44 @@ CREATE TABLE ong (
     email VARCHAR(100)
 );
 
--- TABELA PRODUTO
+-- TABELA PRODUTO (sem id_oferta para evitar loop e vinculada ao estabelecimento)
 CREATE TABLE produto (
     id_produto INT AUTO_INCREMENT PRIMARY KEY,
+    id_estabelecimento INT NOT NULL,
     id_fornecedor INT,
-    id_oferta INT,
-    id_categoria INT,
+    id_categoria INT NOT NULL,
     nome VARCHAR(100) NOT NULL,
-    quantidade INT,
+    quantidade INT NOT NULL DEFAULT 0,
     marca VARCHAR(100),
-    preco_original DECIMAL(10,2),
-    data_validade DATE,
+    preco_original DECIMAL(10,2) NOT NULL,
+    data_validade DATE NOT NULL,
     data_cadastro DATETIME DEFAULT CURRENT_TIMESTAMP,
-
-    FOREIGN KEY (id_fornecedor)
-    REFERENCES fornecedor(id_fornecedor),
-
-    FOREIGN KEY (id_categoria)
-    REFERENCES categoria(id_categoria)
+    FOREIGN KEY (id_estabelecimento) REFERENCES estabelecimento(id_estabelecimento),
+    FOREIGN KEY (id_fornecedor) REFERENCES fornecedor(id_fornecedor),
+    FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria)
 );
 
--- TABELA OFERTA
+-- TABELA OFERTA (apenas ela aponta para produto)
 CREATE TABLE oferta (
     id_oferta INT AUTO_INCREMENT PRIMARY KEY,
-    id_produto INT,
+    id_produto INT NOT NULL,
     percentual_desconto DECIMAL(5,2),
-    preco_promocional DECIMAL(10,2),
-    data_inicio DATE,
-    data_fim DATE,
-    status VARCHAR(30),
-
-    FOREIGN KEY (id_produto)
-    REFERENCES produto(id_produto)
+    preco_promocional DECIMAL(10,2) NOT NULL,
+    data_inicio DATE NOT NULL,
+    data_fim DATE NOT NULL,
+    status VARCHAR(30) DEFAULT 'Ativa',
+    FOREIGN KEY (id_produto) REFERENCES produto(id_produto)
 );
 
--- RELACIONAMENTO PRODUTO E OFERTA
-ALTER TABLE produto
-ADD CONSTRAINT fk_produto_oferta
-FOREIGN KEY (id_oferta)
-REFERENCES oferta(id_oferta);
-
--- TABELA DOACAO
+-- TABELA DOACAO (conectada ao usuario, produto e ong)
 CREATE TABLE doacao (
     id_doacao INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT,
-    quantidade INT,
-    data_doacao DATE,
-
-    FOREIGN KEY (id_usuario)
-    REFERENCES usuario(id_usuario)
+    id_usuario INT NOT NULL,
+    id_produto INT NOT NULL,
+    id_ong INT NOT NULL,
+    quantidade INT NOT NULL,
+    data_doacao DATE NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario),
+    FOREIGN KEY (id_produto) REFERENCES produto(id_produto),
+    FOREIGN KEY (id_ong) REFERENCES ong(id_ong)
 );
