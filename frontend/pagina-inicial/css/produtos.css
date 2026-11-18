@@ -1,0 +1,239 @@
+
+:root {
+    --verde-escuro: #174731;
+    --verde-botao: #216346;
+    --verde-claro: #eaf5ee;
+    --texto: #20382c;
+    --texto-suave: #50665a;
+    --borda: #c5d8cc;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    color: var(--texto);
+    background: linear-gradient(135deg, var(--verde-claro), #f8fbf9);
+    min-height: 100vh;
+    padding: 35px 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: clamp(22px, 5vw, 38px);
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(23, 71, 49, 0.12);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--borda);
+}
+
+.cabecalho h1 {
+    color: var(--verde-escuro);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+/* Botão sair */
+
+.botao-sair {
+    padding: 10px 20px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background-color: var(--verde-claro);
+    color: var(--verde-escuro);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao-sair:hover {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+}
+
+/* Formulário */
+
+#formProduto {
+    display: grid;
+    gap: 20px;
+}
+
+.campo {
+    display: grid;
+    gap: 7px;
+}
+
+.campo label,
+fieldset legend {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--texto);
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background-color: var(--branco);
+    color: var(--texto);
+    font: inherit;
+    transition: 0.2s;
+}
+
+.campo input:focus {
+    outline: 2px solid var(--verde-botao);
+    outline-offset: 2px;
+    border-color: var(--verde-botao);
+}
+
+.campo input[readonly] {
+    background-color: var(--verde-claro);
+    font-weight: bold;
+}
+
+.campo small {
+    color: var(--texto-suave);
+    font-size: 12px;
+}
+
+/* Preços lado a lado */
+
+.grade-precos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Unidade */
+
+fieldset {
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+fieldset legend {
+    padding: 0 8px;
+}
+
+.opcoes-unidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 14px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background-color: var(--verde-claro);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.opcao input {
+    accent-color: var(--verde-botao);
+}
+
+/* Botões */
+
+.botoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.botao-principal,
+.botao-secundario {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao-principal {
+    background-color: var(--verde-botao);
+    color: var(--branco);
+}
+
+.botao-principal:hover {
+    background-color: var(--verde-escuro);
+}
+
+.botao-secundario {
+    background-color: var(--verde-claro);
+    color: var(--verde-escuro);
+    border: 1px solid var(--borda);
+}
+
+.botao-secundario:hover {
+    background-color: var(--borda);
+}
+
+button:focus-visible {
+    outline: 2px solid var(--verde-botao);
+    outline-offset: 3px;
+}
+
+/* Mensagem */
+
+#mensagemProduto {
+    color: var(--verde-escuro);
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media (max-width: 500px) {
+    .grade-precos {
+        grid-template-columns: 1fr;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        align-items: flex-start;
+    }
+
+    .opcoes-unidade {
+        flex-direction: column;
+    }
+}
